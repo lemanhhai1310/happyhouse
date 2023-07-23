@@ -1,0 +1,53 @@
+.footer{
+  &__top{
+    background: #4678A0;
+    @include media-breakpoint-up('m'){
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+  &__bottom{
+    background: var(--d-blue, #275C86);
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  &__width1{
+    @include media-breakpoint-up('m'){
+      width: 393px;
+    }
+  }
+  &__widthFanPageFB{
+    @include media-breakpoint-up('m'){
+      width: 400px;
+    }
+  }
+  &__logoTxt{
+    color: #FFF;
+    @include font-size(60px);
+    font-style: italic;
+    font-weight: 700;
+    line-height: (64/60);
+    margin-bottom: 20px;
+    @include media-breakpoint-up('m'){
+      margin-bottom: 40px;
+    }
+  }
+  &__txt1{
+    font-size: 16px;
+    @include media-breakpoint-up('m'){
+      line-height: 1.75;
+    }
+    span{
+      font-weight: 600;
+      color: #fff;
+    }
+  }
+  &__list{
+    row-gap: 16px;
+  }
+  &__txt{
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 14px;
+    line-height: 1;
+  }
+}
